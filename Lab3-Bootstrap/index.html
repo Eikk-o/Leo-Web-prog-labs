@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monstera World</title>
+    <link rel= "stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  </head>
+
+
+  <body>
+    <header>
+
+      <!-- Navbar using Bootstrap's navbar classes, with responsive behavior -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <!-- Brand name displayed on the left and bigger -->
+          <a class="navbar-brand" href="#">Monstera World</a>
+          
+          <!-- Toggler button for mobile views, collapses the menu into a button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible navbar menu for the links -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#History">History</a>
+              <a class="nav-link" href="#Characteristics">Characteristics</a>
+              <a class="nav-link" href="#Art">Art</a>
+              <a class="nav-link" href="#FAQ">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- Aligns all the page to the center -->
+    <main class="align-items-center">
+
+      <!-- History section -->
+      <section id="History" class="history align-items-center">
+
+        <!-- Using Bootstrap's container class to center the content, and shadow, rounded for aesthetics -->
+        <div class="container bg-success rounded mx-6 mt-5 shadow">
+          <!-- Row that has a flex display when medium or larger screens -->
+          <div class="row d-md-flex p-3 align-items-center">
+            <!-- Text content aligned based on screen size using col-md-6 and text alignment classes -->
+            <div class="col-12 col-md-6 text-center text-light text-md-start">
+              <h2>A little bit of history...</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula. Quisque iaculis pulvinar eros at ullamcorper. Suspendisse potenti.</p>
+              <!-- Bootstrap button styled with success theme and shadow -->
+              <button type="button" class="btn btn-success rounded border-light text-light shadow ">See more</button>
+            </div>
+            <!-- Image on the right, hidden on small screens with d-none d-sm-block -->
+            <div class="col-12 col-md-6 d-none d-sm-block">
+              <img src="./assets/images/monstera.jpg" alt="Monstera Picture" class="img-fluid w-100 p-3">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Characteristics section using a carousel -->
+      <section id="Characteristics" class="characteristics">
+        <div class="container mt-5 text-center">
+          <h2 class="text-success">Characteristics</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec dolor finibus, tincidunt sem at, gravida nunc. Fusce sit amet dolor justo. Vivamus fermentum ultricies ultricies.</p>
+
+          <!-- Bootstrap carousel for sliding content -->
+          <div class="char-carousel mx-auto">
+            <div id="carouselAutoplaying" class="carousel slide shadow" data-bs-ride="carousel">
+              
+              <!-- Indicators for carousel slides -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              
+              <!-- Inner part of the carousel, each div representing a slide -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="#"><img src="/assets/images/monstera-attributes.jpg" class="d-block w-100" alt="Monstera Deliciosa"></a>
+                  <!-- Caption for the slide -->
+                  <div class="carousel-caption">
+                    <h5>Attributes</h5>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.</p>
+                  </div>
+                </div>
+
+                <!-- Additional slides -->
+                <div class="carousel-item">
+                  <a href="#"><img src="/assets/images/monstera-fruit.jpg" class="d-block w-100" alt="Monstera Deliciosa Fruits"></a>
+                  <div class="carousel-caption">
+                    <h5>Fruit</h5>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="#"><img src="/assets/images/monstera-leaves.jpg" class="d-block w-100" alt="Monstera Deliciosa Leaves"></a>
+                  <div class="carousel-caption">
+                    <h5>Leaves</h5>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="#"><img src="/assets/images/monstera-cultural.jpg" class="d-block w-100" alt="Monstera Deliciosa under sunlight"></a>
+                  <div class="carousel-caption">
+                    <h5>Cultural Conditions</h5>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation buttons for the carousel -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Art section with Bootstrap cards and images -->
+      <section id="Art" class="art">
+        <div class="container text-center mt-5">
+          <h2 class="text-success">Monstera in art</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula. Quisque iaculis pulvinar eros at ullamcorper. Suspendisse potenti.</p>
+
+          <!-- Cards layout using Bootstrap's grid system (row, col) and card classes -->
+          <div class="row">
+            <!-- Each artwork displayed in a card -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card shadow">
+                <img src="/assets/images/art1.jpg" class="card-img-top" alt="Monstera by dokirosi">
+                <div class="card-body">
+                  <h5 class="card-title">Doki Rosi</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.</p>
+                  
+                  <!-- Icons for social links, styled as buttons -->
+                  <a href="#" class="btn btn-success"><i class="bi-instagram"></i></a>
+                  <a href="#" class="btn btn-success"><i class="bi-twitter"></i></a>
+                  <a href="#" class="btn btn-success"><i class="bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Repeated for other artworks -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card shadow">
+                <img src="/assets/images/art2.jpg" class="card-img-top" alt="Monstera by Shelby Dillon">
+                <div class="card-body">
+                  <h5 class="card-title">Shelby Dillon</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.</p>
+                  <a href="#" class="btn btn-success"><i class="bi-instagram"></i></a>
+                  <a href="#" class="btn btn-success"><i class="bi-twitter"></i></a>
+                  <a href="#" class="btn btn-success"><i class="bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- More art cards -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card shadow">
+                <img src="/assets/images/art3.jpg" class="card-img-top" alt="Monstera art">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.</p>
+                  <a href="#" class="btn btn-success"><i class="bi-instagram"></i></a>
+                  <a href="#" class="btn btn-success"><i class="bi-twitter"></i></a>
+                  <a href="#" class="btn btn-success"><i class="bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card shadow">
+                <img src="/assets/images/art4.jpg" class="card-img-top" alt="Monstera by The Artist">
+                <div class="card-body">
+                  <h5 class="card-title">The Artist</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.</p>
+                  <a href="#" class="btn btn-success"><i class="bi-instagram"></i></a>
+                  <a href="#" class="btn btn-success"><i class="bi-twitter"></i></a>
+                  <a href="#" class="btn btn-success"><i class="bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FAQ section -->
+      <section id="FAQ" class="faq my-5">
+        <div class="container">
+          <h2 class="text-success text-center">Frequently Asked Questions</h2>
+          <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.</p>
+
+          <!-- Accordion using Bootstrap for collapsing FAQ sections -->
+          <div class="accordion shadow" id="accordionExample">
+            
+            <!-- FAQ #1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <strong>Why do Monstera leaves have holes ?</strong> 
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ #2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <strong>How often should I water my Monstera plant ?</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ #3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <strong>Can Monstera grow in low light conditions ?</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet lorem. Nam nec tempor ligula.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Scroll to Top Button -->
+      <a href="#" class="btn btn-success border-light rounded-circle position-fixed bottom-0 end-0 m-4"><i class="bi-arrow-up"></i></a>
+
+    </main>
+
+
+    <!-- Footer section with a dark theme, text center alignment -->
+    <footer class="footer bg-success text-light p-4 text-center">
+      <div class="container">
+        <!-- Footer links -->
+        <p>&copy; Monstera World | <a href="#" class="text-light">Privacy Policy</a> | <a href="#" class="text-light">Contact Us</a></p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and dependencies for the features used -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
