@@ -6,4 +6,4 @@ See the [Live Demo](https://eikk-o.github.io/Leo-Web-prog-labs/Lab3-Bootstrap/) 
 
 
 ### Lab 4 - JavaScript basics
-See the [Live Demo]() of Lab 4 - JavaScript
+See the [Live Demo](https://eikk-o.github.io/Leo-Web-prog-labs/Lab4-JS/) of Lab 4 - JavaScript
