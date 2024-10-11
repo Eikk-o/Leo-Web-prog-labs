@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Java Script Basics</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+        <style>
+
+            body{
+                background-color: rgb(48, 47, 43);
+                color:#FFFFFF;
+            }
+            
+            .main-container{
+                width:70%;
+                margin:auto;
+            }
+
+            section{
+                width:80%;
+                background-color: #FFC107;
+                border: 3px solid #4B421F;
+                color:#4B421F;
+                border-radius:10px;
+                margin: 20px auto;
+            }
+
+            .main-container, section{
+                padding:5px;
+                box-sizing:border-box;
+            }
+
+
+
+            input[type=text]{
+                background-color: #ffffff41;
+                outline:none;
+                border:none;
+                border-bottom:2px solid #4B421F;
+                border-radius:3px;
+                color:#4B421F;
+            }
+
+            input[type=text]:hover{
+                background-color: #ffffff63;
+            }
+
+
+
+            button{
+                padding:5px 10px;
+                outline:none;
+                border:3px solid #4B421F;
+                border-radius:10px;
+                background-color: #FFC107;
+                color:#4B421F;
+            }
+
+            button:hover{
+                border:3px solid #FFF3CD;
+            }
+
+            button:active{
+                border:3px solid #FFF3CD;
+                color:#FFF3CD;
+            }
+
+
+            .go{
+                width:20%;
+                margin:50px auto 0px auto;
+            }
+
+            .go a{
+                padding: 5px 15px;
+                background-color: #4B421F;
+                border-radius:100px;
+                text-decoration: none;
+                color:#ffffff;
+            }
+
+
+            .go a:link{
+                color:#FFF3CD;
+            }
+
+            .go a:visited{
+                color:#FFF3CD;
+            }
+
+            .go a:hover{
+                color:#FFC107;
+            }
+
+            .go a:active{
+                color:#4B421F;
+                background-color: #FFC107;
+            }
+
+            
+            footer{
+                text-align: center;
+                background-color: rgb(48, 47, 43);
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container main-container">
+            <h1 id="top" class="mx-auto">Basic Geometry</h1>
+            <p class="lead mt-4">In this section, we are going to find the Area of some two-dimension shapes<br>
+            You can click on any shape below</p>
+            
+            <div class="row mt-4">
+                <div class="col-3">
+                    <div class="btn btn-warning rounded">
+                        <a class="nav-link" href="#circle">
+                        <i class="bi-circle"></i>
+                        <span>
+                            Circle
+                        </span>
+                        </a> 
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="btn btn-warning rounded">
+                        <a class="nav-link" href="#triangle">
+                        <i class="bi-triangle"></i>
+                        <span>
+                            Triangle
+                        </span>
+                        </a> 
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="btn btn-warning rounded">
+                        <a class="nav-link" href="#square">
+                        <i class="bi-square"></i>
+                        <span>
+                            Square
+                        </span>
+                        </a> 
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="btn btn-warning rounded">
+                        <a class="nav-link" href="#rectangle">
+                        <i class="bi-square"></i>
+                        <span>
+                            Rectangle
+                        </span>
+                        </a> 
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <section id="circle" class="p-3 mt-5">
+                <h2>Circle Area</h2>
+
+                <div>
+                    <label for="radius">Enter the value of the circle's radius:</label>
+                    <input type="text" id="radius">
+                </div>
+
+                <div class="mt-2">
+                    <label for="circle_area">Result:</label>
+                    <input type="text" id="circle_area" readonly>
+                </div>
+
+                <button onclick="getCircleArea()" class="mt-4 shadow">Calculate</button>
+            </section>
+
+            <div class="go">
+                <a href="#top">Go to top</a>
+            </div>
+
+
+
+            <section id="triangle" class="p-3 mt-5">
+                <h2>Triangle Area</h2>
+
+                <div>
+                    <label for="t_base">Enter the value of the triangle's base:</label>
+                    <input type="text" id="t_base">
+                    <label for="t_height">Enter the value of the triangle's vertical height:</label>
+                    <input type="text" id="t_height">
+                </div>
+
+                <div class="mt-2">
+                    <label for="triangle_area">Result:</label>
+                    <input type="text" id="triangle_area" readonly>
+                </div>
+
+                <button onclick="getTriangleArea()" class="mt-4 shadow">Calculate</button>
+            </section>
+
+            <div class="go">
+                <a href="#top">Go to top</a>
+            </div>
+
+
+
+            <section id="square" class="p-3 mt-5">
+                <h2>Square Area</h2>
+
+                <div>
+                    <label for="s_size">Enter the value of the length of the square's size:</label>
+                    <input type="text" id="s_size">
+                </div>
+
+                <div class="mt-2">
+                    <label for="square_area">Result:</label>
+                    <input type="text" id="square_area" readonly>
+                </div>
+
+                <button onclick="getSquareArea()" class="mt-4 shadow">Calculate</button>
+            </section>
+
+            <div class="go">
+                <a href="#top">Go to top</a>
+            </div>
+
+
+
+            <section id="rectangle" class="p-3 mt-5">
+                <h2>Rectangle Area</h2>
+
+                <div>
+                    <label for="r_width">Enter the value of the rectangle's width:</label>
+                    <input type="text" id="r_width">
+                    <label for="r_height">Enter the value of the rectangle's height:</label>
+                    <input type="text" id="r_height">
+                </div>
+
+                <div class="mt-2">
+                    <label for="rectangle_area">Result:</label>
+                    <input type="text" id="rectangle_area" readonly>
+                </div>
+
+                <button onclick="getRectangleArea()" class="mt-4 shadow">Calculate</button>
+            </section>
+
+            <div class="go">
+                <a href="#top">Go to top</a>
+            </div>
+        </div>
+
+
+
+        <footer class="mt-5">
+            <p>Copyrights @ Leo Poilane. All rights reserved.</p>
+        </footer>
+
+
+
+        <script>
+
+            function getCircleArea(){
+                let rad = document.getElementById("radius").value.trim();
+
+                rad = Number(rad);
+
+                if (isNaN(rad) || rad <= 0) {
+                    alert("Please enter valid positive number for the radius.");
+                    return;
+                }
+
+                let area = Math.PI * Math.pow(rad, 2);
+
+                document.getElementById("circle_area").value = area;
+
+            }
+
+
+            function getTriangleArea(){
+                let base = document.getElementById("t_base").value.trim();
+                let height = document.getElementById("t_height").value.trim();
+
+                base = Number(base);
+                height = Number(height);
+
+                if (isNaN(base) || isNaN(height) || base <= 0 || height <= 0) {
+                    alert("Please enter valid positive numbers for both base and height.");
+                    return;
+                }
+
+                let area = 0.5 * base * height;
+
+                document.getElementById("triangle_area").value = area;
+                
+            }
+
+
+            function getSquareArea(){
+                let size = document.getElementById("s_size").value.trim();
+
+                size = Number(size);
+
+                if (isNaN(size) || size <= 0) {
+                    alert("Please enter valid positive number for the size.");
+                    return;
+                }
+
+                let area = size * size;
+
+                document.getElementById("square_area").value = area;
+                
+            }
+
+
+            function getRectangleArea(){
+                let width = document.getElementById("r_width").value.trim();
+                let height = document.getElementById("r_height").value.trim();
+
+                width = Number(width);
+                height = Number(height);
+
+                if (isNaN(width) || isNaN(height) || width <= 0 || height <= 0) {
+                    alert("Please enter valid positive numbers for both width and height.");
+                    return;
+                }
+
+                let area = width * height;
+
+                document.getElementById("rectangle_area").value = area;
+                
+            }
+
+        </script>
+    </body>
+</html>
