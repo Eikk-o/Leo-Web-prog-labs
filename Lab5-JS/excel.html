@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LAB 5 - Excel</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./excel.html">Excel</a>
+            </nav>
+        </header>
+
+        <main>
+            <form id="excel-form" name="excelform" class="excelform yellow-theme"> 
+                <h2>Excel Functions</h2>
+                <div class="input-nb">
+                    <span>Enter your numbers separated by spaces: </span>
+                    <input type="text" id="numbers" class="yellow-txt"><br>
+                </div>
+                
+                <div class="choice-fct">
+                    <input type="radio" name="function" id="sum" value="AutoSum" checked> 
+                    <label for="sum">AutoSum</label><br>
+
+                    <input type="radio" name="function" id="avg" value="Average"> 
+                    <label for="avg">Average</label><br>
+
+                    <input type="radio" name="function" id="max" value="Max"> 
+                    <label for="max">Max</label><br>
+
+                    <input type="radio" name="function" id="min" value="Min"> 
+                    <label for="min">Min</label><br>
+                </div>
+                
+                <div class="calc-btn">
+                    <input type="button" value="Calculate" id="calculate" class="yellow-btn">
+                </div>
+                
+                <div class="result">
+                    <label>Result: </label>
+                    <input type="text" id="result" class="yellow-txt" readonly>
+                </div>
+            </form> 
+
+            <div class="colors">
+                <span>Choose your theme:</span>
+                <input type="button" value =" " id="purple" class="purple">
+                <input type="button" value= " " id="yellow" class="yellow">
+            </div>
+    
+            
+        </main>
+
+        <footer> 
+            <span>ILAC & EFREI Partnership - HTML, CSS, and JavaScript Main Lab-work - Poilane Leo</span> 
+        </footer>
+
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>

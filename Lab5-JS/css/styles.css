@@ -1,0 +1,292 @@
+/* ========================= GLOBAL ========================= */
+
+::selection{
+    color:rgb(228, 239, 248);
+    background: #2e455b;
+}
+
+body{
+    font-family: Tahoma, Helvetica, sans-serif;
+    background-color: #1a191e;
+    color:#FFFFFF;
+}
+
+header{
+    text-align: center;
+    margin:30px 0px;
+    font-size:25px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header a:link{
+    color:#FFFFFF;
+}
+
+header a:visited{
+    color:#ffffff;
+}
+
+header a:hover{
+    color:#b2c2d1;
+}
+
+header a:active{
+    color:#42474d;
+}
+
+input[type=button]:hover{
+    cursor:pointer;
+}
+
+footer{
+    display:block;
+    width:60%;
+    margin: 50px auto 0px auto;
+}
+/* ============================================================= */
+
+
+
+
+
+/* ========================= HOME PAGE ========================= */
+
+.mainform{
+    display:block;
+    width:60%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #344253;
+    border:2px solid #accaee;
+    border-radius:5px;
+}
+
+.perso_info{
+    padding-bottom: 20px;
+}
+
+.info{
+    margin-bottom: 20px;
+}
+
+.info input[type = text], .info input[type = email]{
+    outline: none;
+    background-color: #344253;
+    color:#ffffff;
+    border: none;
+    border-bottom: 2px solid #accaee;
+    border-radius: 2px;
+}
+
+.info input[type = text]:hover, .info input[type = email]:hover{
+    background-color: #accaee2e;
+}
+
+.radio_butt{
+    padding-bottom: 20px;
+}
+
+.button{
+    margin-bottom: 15px;
+}
+
+.buttons{
+    margin:10px auto;
+}
+
+.buttons input[type=button]{
+    padding:10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+}
+
+.send{
+    border:2px solid #accaee;
+    background-color: #344253;
+    color:#accaee;
+    margin-right: 20px;
+}
+
+.send:hover{
+    background-color: #3b4f68;
+}
+
+.send:active{
+    border:2px solid #344253;
+    background-color: #accaee;
+    color:#344253;
+}
+
+.cancel{
+    border:2px solid #eebeac;
+    background-color: #533a34;
+    color:#eebeac;
+}
+
+.cancel:hover{
+    background-color: #644239;
+}
+
+.cancel:active{
+    border:2px solid #533a34;
+    background-color: #eebeac;
+    color:#533a34;
+}
+
+.output{
+    width:60%;
+    margin:10px auto;
+}
+/* ============================================================== */
+
+
+
+
+
+/* ========================= EXCEL PAGE ========================= */
+
+.excelform{
+    display:block;
+    width:60%;
+    margin:10px auto;
+    padding:10px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.excelform input[type=text]{
+    outline:none;
+    border-radius: 2px;
+}
+
+.excelform h2{
+    text-align:center;
+}
+
+.input-nb{
+    padding-bottom: 20px;
+}
+
+.choice-fct{
+    padding-bottom: 20px;
+}
+
+.calc-btn{
+    padding-bottom: 20px;
+}
+
+.calc-btn input[type=button]{
+    padding:10px;
+    border-radius: 5px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.colors{
+    width:60%;
+    margin:0px auto;
+}
+
+.colors input[type=button]{
+    border-radius: 10px;
+    border: 2px solid;
+    width:21px;
+}
+
+.purple{
+    background-color:rgb(164, 49, 235);
+}
+
+.yellow{
+    background-color:rgb(248, 184, 11);
+}
+/* ================================================================ */
+
+
+
+
+
+/* ========================= THEME COLORS ========================= */
+
+/* Global */
+.purple-theme{
+    background-color: rgb(64, 20, 91);
+    color:rgb(235, 206, 255);
+    border:2px solid #b24ecb;
+}
+
+.yellow-theme{
+    background-color: rgb(46, 40, 22);
+    color:rgb(255, 194, 80);
+    border:2px solid #a06d10;
+}
+
+
+
+/* Text input */
+
+.purple-txt{
+    border:none;
+    border-bottom: 2px solid #b24ecb;
+    background-color: rgb(64, 20, 91);
+    color:rgb(235, 206, 255);
+}
+
+.purple-txt:hover{
+    border-bottom: 2px solid #b24ecb;
+    background-color: #b24ecb34;
+}
+
+
+.yellow-txt{
+    border:none;
+    border-bottom: 2px solid #a06d10;
+    background-color: rgb(46, 40, 22);
+    color:rgb(255, 194, 80);
+}
+
+.yellow-txt:hover{
+    border-bottom: 2px solid #a06d10;
+    background-color: #a06e1040;
+}
+
+
+
+/* Button */
+
+.purple-btn{
+    border:2px solid #b24ecb;
+    background-color: rgb(64, 20, 91);
+    color:rgb(235, 206, 255);
+}
+
+.purple-btn:hover{
+    background-color: rgb(84, 23, 122);
+}
+
+.purple-btn:active{
+    border:2px solid  rgb(64, 20, 91);
+    background-color: rgb(235, 206, 255);
+    color:rgb(64, 20, 91);
+}
+
+
+.yellow-btn{
+    border:2px solid #a06d10;
+    background-color: rgb(46, 40, 22);
+    color:rgb(255, 194, 80);
+}
+
+.yellow-btn:hover{
+    background-color: rgb(69, 59, 32);
+}
+
+.yellow-btn:active{
+    border:2px solid  rgb(46, 40, 22);
+    background-color: rgb(255, 194, 80);
+    color:rgb(46, 40, 22);
+}
+/* ============================================================== */
