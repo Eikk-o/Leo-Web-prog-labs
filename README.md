@@ -3,7 +3,7 @@ Repo of the different labs made during Web Programming courses at ILAC
 
 
 ### Lab 1 - HTML Basics
-See the [Live Demo](https://eikk-o.github.io/Leo-Web-prog-labs/Lab1-HTML/) of Lab 1 - Html
+See the [Live Demo](https://eikk-o.github.io/Leo-Web-prog-labs/Lab1-HTML/html/) of Lab 1 - Html
 
 
 ### Lab 2 - CSS
